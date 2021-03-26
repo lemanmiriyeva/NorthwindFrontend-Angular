@@ -1,0 +1,35 @@
+<body class="text-center">
+  <form class="form-signin" [formGroup]="loginForm">
+    <img
+      class="mb-4"
+      src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+      alt=""
+      width="72"
+      height="72"
+    />
+    <h1 class="h3 mb-3 font-weight-normal">Giriş yap</h1>
+    <label for="inputEmail" class="sr-only">E-posta</label>
+    <input
+      formControlName="email"
+      type="email"
+      id="inputEmail"
+      class="form-control"
+      placeholder="E-posta"
+      required
+      autofocus
+    />
+    <label for="inputPassword" class="sr-only">Parola</label>
+    <input
+     formControlName="password"
+      type="password"
+      id="inputPassword"
+      class="form-control"
+      placeholder="Parola"
+      required
+    />
+    <button class="btn btn-lg btn-primary btn-block"  (click)="login()">
+      Giriş yap
+    </button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+  </form>
+</body>
